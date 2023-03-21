@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+// import './styles/test.scss';
 
 function App() {
   return (
@@ -13,10 +14,10 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
+        <h1 className="bg-green-400 custom-class">TEST</h1>
       </header>
     </div>
   );
