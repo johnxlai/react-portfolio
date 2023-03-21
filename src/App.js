@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-// import './styles/test.scss';
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
           rel="noopener noreferrer">
           Learn React
         </a>
-        <h1 className="bg-green-400 custom-class">TEST</h1>
+        <h1 className="bg-green-400 custom-class">JOHN LAI'S PORTFOLIO</h1>
       </header>
     </div>
   );

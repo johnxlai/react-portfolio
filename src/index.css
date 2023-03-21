@@ -1,13 +1,8 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
-
-@import 'tailwindcss/base';
-@import './styles/test.css';
-
-@import 'tailwindcss/components';
-
-@import 'tailwindcss/utilities';
+@tailwind utilities;
+/* Add complied sass files */
+@import './styles/custom.css';
 
 body {
   margin: 0;
