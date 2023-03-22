@@ -1,10 +1,15 @@
 // import logo from './logo.svg';
 import './App.css';
-import Body from './components/Body';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Main />
+      <Footer />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,9 +24,6 @@ function App() {
         </a>
         <h1 className="bg-green-400 custom-class">JOHN LAI'S PORTFOLIO</h1>
       </header> */}
-      <Header />
-      <Body />
-      <Footer />
     </div>
   );
 }
