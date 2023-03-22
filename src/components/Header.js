@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 function Header() {
   return (
-    <header class="bg-slate-900 text-white p-7">
-      <h1>John Lai's Portfolio</h1>
+    <header className="bg-slate-900 text-white p-7">
+      <h1 className="text-primary">John Lai's Portfolio</h1>
     </header>
   );
 }
