@@ -11,14 +11,14 @@ function Header() {
       <section title="Navigation Container" class="container">
         <div class="row">
           <div class="col-12 col-header">
-            <div class="logo-container">
+            {/* <div class="logo-container">
               <img
                 class="jl-logo"
                 src="./assets/img/jlai-logo-2023-no-bg.svg"
                 alt="John Lai's Logo"
               />
               <h2 class="text-uppercase text-white">John Lai</h2>
-            </div>
+            </div> */}
 
             <button
               class="mobile-nav-toggle"
