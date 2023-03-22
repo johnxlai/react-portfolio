@@ -6,14 +6,23 @@ function Navbar({ currentPage, handlePageChange }) {
       <ul>
         <li>
           <a
-            href="#home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>
-            Home
+            href="#about"
+            onClick={() => handlePageChange('About')}
+            className={
+              currentPage === 'About' ? 'nav-link active' : 'nav-link'
+            }>
+            About
           </a>
         </li>
         <li>
-          <a href=""></a>
+          <a
+            href="#portfolio"
+            onClick={() => handlePageChange('Portfolio')}
+            className={
+              currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'
+            }>
+            Portfolio
+          </a>
         </li>
         <li>
           <a href=""></a>
