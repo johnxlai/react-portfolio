@@ -2,8 +2,10 @@ import React from 'react';
 
 function Header() {
   return (
-    <header className="main-header">
-      <h1>Header</h1>
+    <header className="bg-primary p-10">
+      <div className="container mx-auto">
+        <h1>Header</h1>
+      </div>
     </header>
   );
 }
