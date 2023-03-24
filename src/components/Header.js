@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <header className="bg-secondary py-10 main-header">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex justify-between">
         <div class="logo-container">
           <img
             class="jl-logo"
