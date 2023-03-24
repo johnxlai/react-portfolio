@@ -3,5 +3,9 @@
 
   .logo-container {
     color: green;
+
+    &:hover {
+      color: blue;
+    }
   }
 }
