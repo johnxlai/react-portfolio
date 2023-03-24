@@ -20,28 +20,28 @@ function Footer() {
               </li>
               <li>
                 <ul className="social-icons flex">
-                  <li>
+                  <li className="">
                     <a
-                      className=""
+                      className="mr-3"
                       href="https://www.linkedin.com/in/johnxlai"
                       target="_blank">
-                      <i className="fa fa-linkedin mr-3 "></i>
+                      <i className="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="mr-3"
+                      href="https://github.com/johnxlai"
+                      target="_blank">
+                      <i className="fa fa-github"></i>
                     </a>
                   </li>
                   <li>
                     <a
                       className=""
-                      href="https://github.com/johnxlai"
-                      target="_blank">
-                      <i className="fa fa-github mr-3 "></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-light-grey"
                       href="./assets/resume/john-lai-resume.pdf"
                       target="_blank">
-                      <i className="fa fa-file-text-o text-light-grey"></i>
+                      <i className="fa fa-file-text-o"></i>
                     </a>
                   </li>
                 </ul>

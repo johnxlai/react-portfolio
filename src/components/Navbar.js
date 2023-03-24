@@ -2,9 +2,9 @@ import React from 'react';
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <div>
-      <ul>
-        <li>
+    <>
+      <ul className="flex gap-3 p-2 bg-primary text-white">
+        <li className="hover:bg-secondary p-2">
           <a
             href="#about"
             onClick={() => handlePageChange('About')}
@@ -14,7 +14,7 @@ function Navbar({ currentPage, handlePageChange }) {
             About
           </a>
         </li>
-        <li>
+        <li className="hover:bg-secondary p-2">
           <a
             href="#portfolio"
             onClick={() => handlePageChange('Portfolio')}
@@ -24,7 +24,7 @@ function Navbar({ currentPage, handlePageChange }) {
             Portfolio
           </a>
         </li>
-        <li>
+        <li className="hover:bg-secondary p-2">
           <a
             href="#contact"
             onClick={() => handlePageChange('Contact')}
@@ -34,7 +34,7 @@ function Navbar({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
-        <li>
+        <li className="hover:bg-secondary p-2">
           <a
             href="#resume"
             onClick={() => handlePageChange('Resume')}
@@ -45,7 +45,7 @@ function Navbar({ currentPage, handlePageChange }) {
           </a>
         </li>
       </ul>
-    </div>
+    </>
     // <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     //   <div className="container-fluid">
     //     <a className="navbar-brand" href="/">
