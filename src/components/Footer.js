@@ -4,8 +4,8 @@ function Footer() {
   return (
     <footer className="footer">
       <section className="footer-contact bg-primary">
-        <div className="container mx-auto py-10">
-          <div className="bg-secondary say-hello p-12">
+        <div className="container mx-auto py-10 relative flex justify-center h-[18rem]">
+          <div className="bg-secondary say-hello p-12 absolute top-[3rem]">
             <h3 className="uppercase text-3xl text-white mb-3">Say Hello</h3>
             <ul>
               <li>

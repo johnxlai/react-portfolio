@@ -24,14 +24,14 @@ function Header() {
 
   return (
     <header className="bg-secondary py-10 main-header">
-      <div className="container mx-auto flex justify-between">
-        <div class="logo-container">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between">
+        <div className="logo-container">
           <img
-            class="jl-logo"
+            className="jl-logo"
             src="/react-portfolio/images/jlai-logo-2023.svg"
             alt="John Lai's Logo"
           />
-          <h2 class="text-white text-xl">JOHN LAI</h2>
+          <h2 className="text-white text-xl">JOHN LAI</h2>
         </div>
 
         <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
