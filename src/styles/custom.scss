@@ -1,11 +1,6 @@
-.main-header {
-  color: red;
-
-  .logo-container {
-    color: green;
-
-    &:hover {
-      color: blue;
-    }
+.about-container {
+  p {
+    line-height: 30px;
+    margin-bottom: 28px;
   }
 }

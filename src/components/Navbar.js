@@ -9,7 +9,9 @@ function Navbar({ currentPage, handlePageChange }) {
             href="#about"
             onClick={() => handlePageChange('About')}
             className={
-              currentPage === 'About' ? 'nav-link active' : 'nav-link'
+              currentPage === 'About'
+                ? 'font-bold uppercase active'
+                : 'font-bold uppercase'
             }>
             About
           </a>
@@ -19,7 +21,9 @@ function Navbar({ currentPage, handlePageChange }) {
             href="#portfolio"
             onClick={() => handlePageChange('Portfolio')}
             className={
-              currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'
+              currentPage === 'Portfolio'
+                ? 'font-bold uppercase active'
+                : 'font-bold uppercase'
             }>
             Portfolio
           </a>
@@ -29,7 +33,9 @@ function Navbar({ currentPage, handlePageChange }) {
             href="#contact"
             onClick={() => handlePageChange('Contact')}
             className={
-              currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
+              currentPage === 'Contact'
+                ? 'font-bold uppercase active'
+                : 'font-bold uppercase'
             }>
             Contact
           </a>
@@ -39,7 +45,9 @@ function Navbar({ currentPage, handlePageChange }) {
             href="#resume"
             onClick={() => handlePageChange('Resume')}
             className={
-              currentPage === 'Resume' ? 'nav-link active' : 'nav-link'
+              currentPage === 'Resume'
+                ? 'font-bold uppercase active'
+                : 'font-bold uppercase'
             }>
             Resume
           </a>

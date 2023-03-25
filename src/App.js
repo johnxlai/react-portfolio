@@ -28,15 +28,12 @@ function App() {
 
   return (
     <div className="App flex flex-col bg-secondary text-white h-full">
-      <header className=" py-10 flex container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <header className="py-10 flex container mx-auto flex flex-col md:flex-row justify-between items-center">
         <Header />
         <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
 
-      <main>{renderPage()}</main>
-
-      {/* <Main></Main> */}
-
+      <main className="container mx-auto py-10">{renderPage()}</main>
       <Footer />
     </div>
   );
