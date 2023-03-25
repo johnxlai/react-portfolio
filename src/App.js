@@ -33,7 +33,9 @@ function App() {
         <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
 
-      <main className="container mx-auto py-10">{renderPage()}</main>
+      <main className={`py-10 bg-primary ${currentPage}`}>
+        <div className="container mx-auto">{renderPage()}</div>
+      </main>
       <Footer />
     </div>
   );
