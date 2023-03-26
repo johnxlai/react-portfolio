@@ -6,7 +6,7 @@ function Portfolio() {
       id="recent-work"
       className="recent-work text-white"
       title="John Lai's Full Stack Portfolio">
-      <h3 className="uppercase">Recent Work</h3>
+      <h3 className="uppercase text-center">Recent Work</h3>
       <PortfolioList />
     </section>
   );

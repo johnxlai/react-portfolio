@@ -2,8 +2,8 @@ import React from 'react';
 
 function Resume() {
   return (
-    <div className="resume">
-      <h3 className="uppercase">Resume</h3>
+    <div className="resume text-center">
+      <h3 className="uppercase mb-5">Resume</h3>
       <div className="resume-container mb-5">
         <a
           className="inline-flex items-center bg-secondary text-white py-2 px-4 rounded hover:bg-green-900"
@@ -13,7 +13,7 @@ function Resume() {
           <i className="fa fa-file-text-o"></i>
         </a>
       </div>
-      <div className="w-1/2">
+      <div className="mx-auto w-1/2">
         <h5 class="mb-5 text-xl">EDUCATION:</h5>
         <ul>
           <li class="mb-3">
