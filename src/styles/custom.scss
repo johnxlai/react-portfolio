@@ -1,3 +1,11 @@
+//Nav active
+nav .active {
+  // background-color: var(--secondary-color);
+  border-bottom: 4px solid white;
+  padding-bottom: 14px;
+}
+
+//About
 .about-container {
   p {
     line-height: 30px;
