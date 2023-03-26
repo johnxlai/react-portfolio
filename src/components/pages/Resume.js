@@ -8,7 +8,7 @@ function Resume() {
         <a
           className="inline-flex items-center bg-secondary text-white py-2 px-4 rounded hover:bg-green-900"
           href="./resume/john-lai-resume.pdf"
-          target="_blank">
+          download>
           <h5 className="mr-2">Download Resume</h5>
           <i className="fa fa-file-text-o"></i>
         </a>
