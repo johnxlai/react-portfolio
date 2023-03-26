@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PortfolioItem = ({ title, image, link }) => {
+const PortfolioItem = ({ title, image, link, projectNo }) => {
   return (
     <div className="project-container img-on-left">
       <div className="img-container">
@@ -10,7 +10,7 @@ const PortfolioItem = ({ title, image, link }) => {
       </div>
       <div className="folio-container half-containers">
         <div className="triangle watch">
-          <h4>1</h4>
+          <h4>{projectNo}</h4>
         </div>
         <div className="project-title text-white font-weight-bold pl-4 mb-4">
           <h5 className="uppercase mb-10">{title}</h5>
