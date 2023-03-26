@@ -18,16 +18,7 @@ const projects = [
     image: './images/folio/petawawa-toyota.jpg',
     link: 'https://www.petawawa-toyota.com',
   },
-  {
-    title: 'Movie Trivia',
-    image: './images/folio/movie-trivia.jpg',
-    link: 'https://johnlai.ca/movies-trivia/',
-  },
-  {
-    title: 'ASL Sign Quiz',
-    image: './images/folio/asl-quiz.jpg',
-    link: 'https://johnlai.ca/asl-alphabet-quiz/',
-  },
+
   {
     title: 'Travel Me App',
     image: './images/folio/travel-me.png',
@@ -37,6 +28,16 @@ const projects = [
     title: 'Fingerspelling Game',
     image: './images/folio/fingerspelling.png',
     link: 'https://asl-fingerspelling-game.herokuapp.com',
+  },
+  {
+    title: 'Movie Trivia',
+    image: './images/folio/movie-trivia.jpg',
+    link: 'https://johnlai.ca/movies-trivia/',
+  },
+  {
+    title: 'ASL Sign Quiz',
+    image: './images/folio/asl-quiz.jpg',
+    link: 'https://johnlai.ca/asl-alphabet-quiz/',
   },
 ];
 
