@@ -2,13 +2,13 @@ import React from 'react';
 
 const PortfolioItem = ({ title, image, link, projectNo }) => {
   return (
-    <div className="project-container img-on-left">
+    <div className="project-container img-on-left justify-center">
       <div className="img-container">
-        <a href={link}>
-          <img className="max-wi-full folio-img-size" src={image} alt="" />
+        <a href={link} target="_blank">
+          <img className="max-w-full folio-img-size" src={image} alt="" />
         </a>
       </div>
-      <div className="folio-container half-containers">
+      <div className="folio-container">
         <div className="triangle watch">
           <h4>{projectNo}</h4>
         </div>
