@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Form() {
   const [errMessage, setErrMessage] = useState('');
@@ -8,6 +8,12 @@ export default function Form() {
     const value = e.target.value;
     validateForm(name, value);
   };
+
+  // When the state changes run this callback
+  useEffect(() => {
+    // Update Error Message
+    console.log(errMessage);
+  });
 
   const validateForm = (fieldName, value) => {
     switch (fieldName) {
