@@ -39,7 +39,7 @@ function Footer() {
                   <li>
                     <a
                       className=""
-                      href="./assets/resume/john-lai-resume.pdf"
+                      href="./resume/john-lai-resume.pdf"
                       target="_blank">
                       <i className="fa fa-file-text-o"></i>
                     </a>

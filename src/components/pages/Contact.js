@@ -2,10 +2,9 @@ import React from 'react';
 import Form from '../Form';
 
 function Contact() {
-
   return (
     <div>
-      <div>CONTACT</div>
+      <h3 className="uppercase">Contact</h3>
       <Form />
     </div>
   );
