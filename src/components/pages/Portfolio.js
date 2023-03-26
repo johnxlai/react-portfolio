@@ -1,5 +1,5 @@
-import React from 'react';
 import PortfolioList from '../PortfolioList';
+const projects = [123, 456, 789];
 
 function Portfolio() {
   return (
@@ -8,7 +8,7 @@ function Portfolio() {
       className="recent-work text-white"
       title="John Lai's Full Stack Portfolio">
       <h3 className="uppercase">Recent Work</h3>
-      <PortfolioList />
+      <PortfolioList projects={projects} />
 
       {/* <div className="container">
           <div className="row">
