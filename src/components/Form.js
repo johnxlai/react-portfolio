@@ -12,25 +12,20 @@ export default function Form() {
   const validateForm = (fieldName, value) => {
     switch (fieldName) {
       case 'name':
-        if (value.length < 1) {
-          setErrMessage('Name is required');
-        }
-
-        // console.log('name', value.length >= 1);
-        // nameValid = value.length >= 3;
+        value.length < 1
+          ? setErrMessage('Name is required')
+          : setErrMessage('');
         break;
       case 'email':
         //Rexgex for email validation
-        if (!value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
-          setErrMessage('Correct Email address is required');
-        }
-        // emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-
+        !value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
+          ? setErrMessage('Correct Email address is required')
+          : setErrMessage('');
         break;
       case 'message':
-        if (value.length < 1) {
-          setErrMessage('Message is required');
-        }
+        value.length < 1
+          ? setErrMessage('Message is required')
+          : setErrMessage('');
         break;
 
       default:
