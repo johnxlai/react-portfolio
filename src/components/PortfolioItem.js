@@ -13,8 +13,11 @@ const PortfolioItem = ({ title, image, link }) => {
           <h4>1</h4>
         </div>
         <div className="project-title text-white font-weight-bold pl-4 mb-4">
-          <h5 className="text-uppercase mb-3">{title}</h5>
-          <a href={link} className="btn-primary" target="_blank">
+          <h5 className="uppercase mb-10">{title}</h5>
+          <a
+            href={link}
+            className="bg-secondary hover:bg-sky-700 p-4"
+            target="_blank">
             View Live
           </a>
         </div>
