@@ -1,10 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Form() {
+  const [errMessage, setErrMessage] = useState('');
+
   const handleUserInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    console.log(name, value);
+    validateForm(name, value);
+  };
+
+  const validateForm = (fieldName, value) => {
+    switch (fieldName) {
+      case 'name':
+        if (value.length < 1) {
+          setErrMessage('Name is required');
+        }
+
+        // console.log('name', value.length >= 1);
+        // nameValid = value.length >= 3;
+        break;
+      case 'email':
+        //Rexgex for email validation
+        if (!value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+          setErrMessage('Correct Email address is required');
+        }
+        // emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+
+        break;
+      case 'message':
+        if (value.length < 1) {
+          setErrMessage('Message is required');
+        }
+        break;
+
+      default:
+        break;
+    }
   };
   return (
     <div className="container mx-auto">
@@ -67,7 +98,7 @@ export default function Form() {
           />
         </div>
 
-        <p className="form-error text-red-400 mb-3">Error Message Here</p>
+        <p className="form-error text-red-400 mb-3">{errMessage}</p>
 
         <div className="flex items-center justify-between">
           <input
