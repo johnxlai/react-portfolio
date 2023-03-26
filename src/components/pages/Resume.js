@@ -14,9 +14,9 @@ function Resume() {
         </a>
       </div>
       <div className="mx-auto w-1/2">
-        <h5 class="mb-5 text-xl">EDUCATION:</h5>
+        <h5 className="mb-5 text-xl">EDUCATION:</h5>
         <ul>
-          <li class="mb-3">
+          <li className="mb-3">
             <h6>Full Stack Development</h6>
             <p>University of Toronto, Toronto, ON</p>
           </li>

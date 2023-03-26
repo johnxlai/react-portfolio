@@ -1,6 +1,11 @@
 import React from 'react';
 
 export default function Form() {
+  const handleUserInput = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    console.log(name, value);
+  };
   return (
     <div className="container mx-auto">
       <form
@@ -17,8 +22,12 @@ export default function Form() {
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="name"
+            name="name"
             type="text"
             placeholder="Your Name"
+            onChange={(e) => {
+              handleUserInput(e);
+            }}
             required
           />
         </div>
@@ -35,6 +44,9 @@ export default function Form() {
             type="email"
             placeholder="Email"
             required
+            onChange={(e) => {
+              handleUserInput(e);
+            }}
           />
         </div>
         <div className="mb-4">
@@ -49,6 +61,9 @@ export default function Form() {
             name="message"
             rows="5"
             required
+            onChange={(e) => {
+              handleUserInput(e);
+            }}
           />
         </div>
 
