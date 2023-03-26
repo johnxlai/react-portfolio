@@ -1,7 +1,11 @@
 import React from 'react';
 
-const PortfolioItem = ({ project }) => {
-  return <div>{project}</div>;
+const PortfolioItem = ({ projectName, projectRole }) => {
+  return (
+    <div>
+      {projectName}, {projectRole}
+    </div>
+  );
 };
 
 export default PortfolioItem;
