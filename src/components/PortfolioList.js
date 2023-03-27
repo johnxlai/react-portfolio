@@ -41,10 +41,10 @@ const projects = [
   },
 ];
 
-const PortfolioList = () => {
+const PortfolioList = ({ abc }) => {
   return (
     <div className="mx-auto">
-      {projects.map((project, index) => (
+      {abc.map((project, index) => (
         <PortfolioItem
           key={index}
           projectNo={index + 1}

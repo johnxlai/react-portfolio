@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Form() {
+  const [errName, setErrName] = useState('');
+  const [errEmail, setErrEmail] = useState('');
   const [errMessage, setErrMessage] = useState('');
 
   const handleUserInput = (e) => {
@@ -9,24 +11,16 @@ export default function Form() {
     validateForm(name, value);
   };
 
-  // When the state changes run this callback
-  useEffect(() => {
-    // Update Error Message
-    console.log(errMessage);
-  });
-
   const validateForm = (fieldName, value) => {
     switch (fieldName) {
       case 'name':
-        value.length < 1
-          ? setErrMessage('Name is required')
-          : setErrMessage('');
+        value.length < 1 ? setErrName('Name is required') : setErrName('');
         break;
       case 'email':
         //Rexgex for email validation
         !value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
-          ? setErrMessage('Correct Email address is required')
-          : setErrMessage('');
+          ? setErrEmail('Correct Email address is required')
+          : setErrEmail('');
         break;
       case 'message':
         value.length < 1
