@@ -1,16 +1,13 @@
-# John Lai
+# John Lai's React Portfolio
 ![License Badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## User Story
-AS A developer I want to create notes or code snippets with or without an internet connection, I want to create notes or code snippets with or without an internet connection so that I can reliably retrieve them for later use.
-
+As an employer looking for candidates with experience building single-page applications. I want to view a potential employee's deployed React portfolio of work samples so that I can assess whether they're a good candidate for an open position
 
 ## Description
 * This is John Lai a Full Stack Developer's portfolio site.
 
-* Using Scss instead of css, files are in the scss folder inside the partials folder, which gets imported in to style.scss. The style scss file complies into a min.css inside the css folder under assets.
-
-
+* This project uses Tailwind and custom scss for styling. It is a single page React portfolio.
 
 
 ## Table of Contents
@@ -21,12 +18,12 @@ AS A developer I want to create notes or code snippets with or without an intern
 - [License](#license)
 
 ## Installation
-* You can install and download a desktop version if you want. Otherwise you can use via the Heroku link.
-
+* N/A
 ## Usage
-* Keep in mind there are three package.json in this repo. One for the client side ,one for server side and one in the main directory that can run both client side and server sides package.json at once.
+* In the root directory run npm start to get it to work locally.
+To push and display final layout in staging or in production, run npm deploy.
 
-* This project uses babel, webpack, concurrently, nodemon, css loader, html-webpack-plugin, webpack-paw-manifest, workbox, idb, code-mirror-themes, express
+* This project uses React, react-app, tailwin and gh-pages
 
 ## License
 * This project is under the MIT license.
@@ -45,10 +42,11 @@ AS A developer I want to create notes or code snippets with or without an intern
 
 
 # Screenshot
-![Screenshot](./screenshot/pwa-text-editor.png)
+![Screenshot](./screenshot/john-lai-web-homepage.png)
 
 ## Live Site
 https://johnxlai.github.io/react-portfolio/#about
 
 ## Repo
-https://johnxlai.github.io/react-portfolio/
+https://github.com/johnxlai/react-portfolio
+
