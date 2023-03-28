@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export default function Form() {
   const [errName, setErrName] = useState('');
@@ -56,6 +56,7 @@ export default function Form() {
             }}
             required
           />
+          <p className="form-error text-red-400 mb-3 mt-2">{errName}</p>
         </div>
         <div className="mb-4">
           <label
@@ -74,6 +75,7 @@ export default function Form() {
               handleUserInput(e);
             }}
           />
+          <p className="form-error text-red-400 mb-3 mt-2">{errEmail}</p>
         </div>
         <div className="mb-4">
           <label
