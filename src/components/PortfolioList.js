@@ -44,7 +44,7 @@ const projects = [
 const PortfolioList = ({ abc }) => {
   return (
     <div className="mx-auto">
-      {abc.map((project, index) => (
+      {projects.map((project, index) => (
         <PortfolioItem
           key={index}
           projectNo={index + 1}
